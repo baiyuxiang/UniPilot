@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniPilot Support</title>
+  <meta name="description" content="Technical support for UniPilot, a student study planner for iPhone and iPad.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #101828;
+      --muted: #667085;
+      --line: #e4e7ec;
+      --surface: #ffffff;
+      --wash: #f7fbfb;
+      --accent: #00a7a5;
+      --brand: #c81245;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(0, 167, 165, 0.14), transparent 34rem),
+        radial-gradient(circle at top right, rgba(200, 18, 69, 0.10), transparent 30rem),
+        var(--wash);
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    header,
+    section {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: 0 24px 80px rgba(16, 24, 40, 0.08);
+    }
+
+    header {
+      padding: 32px;
+      border-radius: 28px;
+    }
+
+    section {
+      margin-top: 18px;
+      padding: 28px 32px;
+      border-radius: 24px;
+      box-shadow: none;
+    }
+
+    .brand-logo {
+      display: block;
+      width: min(260px, 68vw);
+      height: auto;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.1rem, 6vw, 4rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.18rem;
+      letter-spacing: -0.01em;
+    }
+
+    p,
+    ul {
+      margin: 0 0 12px;
+    }
+
+    p:last-child,
+    ul:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-weight: 600;
+      max-width: 42rem;
+    }
+
+    .support-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--accent);
+      box-shadow: 0 12px 32px rgba(0, 167, 165, 0.22);
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 560px) {
+      main {
+        padding: 24px 0;
+      }
+
+      header,
+      section {
+        padding: 22px;
+        border-radius: 22px;
+      }
+
+      .brand-logo {
+        width: min(220px, 72vw);
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="brand-logo" src="assets/UniPilotWordmark.png" alt="UniPilot">
+      <h1>Support</h1>
+      <p class="intro">Help for UniPilot, a calm study planner for courses, deadlines, exams, timetables, and study sessions.</p>
+    </header>
+
+    <section>
+      <h2>Need Help?</h2>
+      <p>If you need technical support, have found a bug, or want to report an issue with timetable import, course import, notifications, Live Activities, or study timer sessions, please contact the developer.</p>
+      <a class="support-link" href="https://github.com/yuxiangbai">Contact Developer</a>
+    </section>
+
+    <section>
+      <h2>Common Checks</h2>
+      <ul>
+        <li>For notifications, make sure UniPilot is allowed to send notifications in iOS Settings.</li>
+        <li>For timetable imports, use the calendar link copied from the University of Amsterdam Rooster website.</li>
+        <li>For course imports, use a direct Studiegids course page link.</li>
+        <li>For Live Activities and Dynamic Island, make sure Live Activities are enabled in iOS Settings.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p>UniPilot keeps study planning data on your device and does not use advertising tracking.</p>
+      <p><a href="privacy.html">Read the UniPilot Privacy Policy</a></p>
+    </section>
+
+    <footer>
+      UniPilot Support
+    </footer>
+  </main>
+</body>
+</html>
